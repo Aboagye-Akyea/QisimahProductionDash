@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Umega App - Blank Template</title>
+    <title>Umega App - Product List</title>
     <!-- PACE-->
     <link rel="stylesheet" type="text/css" href="../plugins/PACE/themes/blue/pace-theme-flash.css">
     <script type="text/javascript" src="../plugins/PACE/pace.min.js"></script>
@@ -20,14 +20,15 @@
     <link rel="stylesheet" type="text/css" href="../plugins/flag-icon-css/css/flag-icon.min.css">
     <!-- Bootstrap Progressbar-->
     <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
-    <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="../plugins/font-awesome/css/font-awesome.min.css">
+    <!-- DataTables-->
+    <link rel="stylesheet" type="text/css" href="../plugins/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/datatables.net-colreorder-bs/css/colReorder.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/datatables.net-responsive-bs/css/responsive.bootstrap.min.css">
     <!-- Primary Style-->
     <link rel="stylesheet" type="text/css" href="../build/css/fourth-layout.css">
-    <!-- DropzoneJS-->
-    <link rel="stylesheet" type="text/css" href="../plugins/dropzone/dist/min/dropzone.min.css">
-    <!-- Primary Style-->
-    <link rel="stylesheet" type="text/css" href="../build/css/fourth-layout.css">
+    <!-- Bootstrap Date Range Picker-->
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-daterangepicker/daterangepicker.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
     <!--[if lt IE 9]>
@@ -134,6 +135,7 @@
     <!-- Header end-->
     <div class="main-container">
       <!-- Main Sidebar start-->
+      <!-- Main Sidebar start-->
       <aside class="main-sidebar">
         <div class="user">
           <div id="esp-user-profile" data-percent="65" style="height: 130px; width: 130px; line-height: 100px; padding: 15px;" class="easy-pie-chart"><img src="../build/images/users/Kofi-Kinaata-1.jpg" alt="" class="avatar img-circle"><span class="status bg-success"></span></div>
@@ -169,128 +171,84 @@
         <div class="page-header container-fluid">
           <div class="row">
             <div class="col-sm-6">
-              <h4 class="mt-0 mb-5">Blank Template</h4>
-              <ol class="breadcrumb mb-0">
-                <li><a href="#">Umega</a></li>
-                <li><a href="#">Extra Pages</a></li>
-                <li class="active">Blank Template</li>
-              </ol>
+              <h4 class="mt-0 mb-5">Live FM Report</h4>
             </div>
-            <div class="col-sm-6">
-              <!-- <div class="btn-group mt-5">
-                <button type="button" class="btn btn-default btn-outline"><i class="flag-icon flag-icon-us mr-5"></i> English</button>
-                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-default btn-outline dropdown-toggle"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
-                <ul class="dropdown-menu dropdown-menu-right animated fadeInDown">
-                  <li><a href="#"><i class="flag-icon flag-icon-de mr-5"></i> German</a></li>
-                  <li><a href="#"><i class="flag-icon flag-icon-fr mr-5"></i> French</a></li>
-                  <li><a href="#"><i class="flag-icon flag-icon-es mr-5"></i> Spanish</a></li>
-                  <li><a href="#"><i class="flag-icon flag-icon-it mr-5"></i> Italian</a></li>
-                  <li><a href="#"><i class="flag-icon flag-icon-jp mr-5"></i> Japanese</a></li>
-                </ul>
-              </div> -->
-            </div>
+
           </div>
         </div>
+
         <div class="page-content container-fluid">
+
           <div class="row">
-            <div class="col-lg-12">
-              <div class="widget">
-                <div class="widget-heading">
-                  <h3 class="widget-title">Upload Song</h3>
-                </div>
-                <div class="widget-body">
-
-                  <div class="row">
-                  <div class="col-xs-12">
-                      <form id="type-dz" action="/upload" class="dropzone"></form>
-                </div>
-              </div>
-
-                  <form>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="txtSongTitle">Song title</label>
-                          <input id="txtSongTitle" type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="ddlGenre">Genre</label>
-                          <select id="ddlGenre" class="form-control">
-                            <option value="">Choose a genre</option>
-                            <option value="action">Hip Life</option>
-                            <option value="comedy">Hip Hop</option>
-                            <option value="horror">R&B</option>
-                            <option value="romance">Dance Hall</option>
-                            <option value="romance">House Music</option>
-                            <option value="romance">Garage</option>
-                            <option value="romance">Pop</option>
-                            <option value="romance">Rock</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="txtArtist">Artist</label>
-                          <input id="txtArtist" type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="txtFeature">Feature</label>
-                          <input id="txtFeature" type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                      <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="txtAlbum">Album</label>
-                          <input id="txtAlbum" type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="txtProducer">Producer</label>
-                          <input id="txtProducer" type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="txtRecordLabel">Record Label</label>
-                          <input id="txtRecordLabel" type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="txtYear">Year</label>
-                          <input id="txtYear" type="text" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="fileInput">Upload Audio File</label>
-                    <input id="fileInput" type="file" data-buttonname="btn-outline btn-primary" data-iconname="ti-zip" class="filestyle">
-                  </div>
-                  </div>
-                </div>
-
-                    <button type="submit" class="btn btn-outline btn-primary">Submit</button>
-                  </form>
-                </div>
+        <div class="col-md-6">
+            <div class="form-group">
+              <!-- <label>Date range</label> -->
+              <div class="btn-toolbar">
+                <button id="predefined-ranges-picker" type="button" class="btn btn-raised btn-black"><i class="ti-calendar"> </i><span></span></button>
               </div>
             </div>
           </div>
+          
+          <div class="col-md-3 col-sm-6 pull-right">
+              <div class="widget no-border bg-info clearfix p-15">
+                <div class="pull-left">
+                  <h5 class="m-0 text-uppercase">Total Plays</h5>
+                  <div class="fs-18 fw-600">3,890</div>
+                </div><i class="ti-twitter-alt fs-36 pull-right"></i>
+              </div>
+            </div>
         </div>
-        <div class="footer">2017 &copy;  <a href="#">Qisimah</a></div>
+
+          <div class="widget">
+            <div class="widget-body">
+
+              <table id="product-list" style="width: 100%" class="table table-hover dt-responsive nowrap">
+                <thead>
+                  <tr>
+                    <th class="text-center">
+                      <div class="checkbox-custom">
+                        <input id="checkAll" type="checkbox" value="option1">
+                        <label for="checkAll" class="pl-0">&nbsp;</label>
+                      </div>
+                    </th>                    
+                    <th>Content</th>                    
+                    <th class="text-center">Time of Play</th>                    
+                    <th class="text-center">Date of Play</th>                  
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">
+                      <div class="checkbox-custom">
+                        <input id="product-01" type="checkbox" value="01">
+                        <label for="product-01" class="pl-0">&nbsp;</label>
+                      </div>
+                    </td>                    
+                    <td>Confession</td>                    
+                    <td class="text-center">16.00 GMT</td>                    
+                    <td class="text-center">19 May 2016</td>                 
+                    
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      <div class="checkbox-custom">
+                        <input id="product-02" type="checkbox" value="02">
+                        <label for="product-02" class="pl-0">&nbsp;</label>
+                      </div>
+                    </td>
+                    
+                    <td>Susuka</td>                    
+                    <td class="text-center">02.34 GMT</td>                    
+                    <td class="text-center">20 June 2016</td>                  
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>          
+        </div>       
+        <div class="footer">2016 &copy;  <a href="http://qisimah.com">Qisimah Audio Insights</a></div>
       </div>
       <!-- Right Sidebar start-->
       <aside class="right-sidebar closed">
@@ -583,17 +541,28 @@
     <script type="text/javascript" src="../plugins/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- jQuery Easy Pie Chart-->
     <script type="text/javascript" src="../plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <!-- DataTables-->
+    <script type="text/javascript" src="../plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../plugins/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="../plugins/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../plugins/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script type="text/javascript" src="../plugins/jszip/dist/jszip.min.js"></script>
+    <script type="text/javascript" src="../plugins/pdfmake/build/pdfmake.min.js"></script>
+    <script type="text/javascript" src="../plugins/pdfmake/build/vfs_fonts.js"></script>
+    <script type="text/javascript" src="../plugins/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script type="text/javascript" src="../plugins/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../plugins/datatables.net-colreorder/js/dataTables.colReorder.min.js"></script>
+    <script type="text/javascript" src="../plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="../plugins/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
     <!-- Custom JS-->
     <script type="text/javascript" src="../build/js/fourth-layout/app.js"></script>
     <script type="text/javascript" src="../build/js/fourth-layout/demo.js"></script>
-
-
-
-    <!-- DropzoneJS-->
-    <script type="text/javascript" src="../plugins/dropzone/dist/min/dropzone.min.js"></script>
+    <script type="text/javascript" src="../build/js/page-content/e-commerce/product-list.js"></script>
+    <!-- MomentJS-->
+    <script type="text/javascript" src="../plugins/moment/min/moment.min.js"></script>
+<!-- Bootstrap Date Range Picker-->
+    <script type="text/javascript" src="../plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
     <!-- Custom JS-->
-    <script type="text/javascript" src="../build/js/fourth-layout/app.js"></script>
-    <script type="text/javascript" src="../build/js/fourth-layout/demo.js"></script>
-    <script type="text/javascript" src="../build/js/page-content/file-uploads/dropzone-js.js"></script>
+    <script type="text/javascript" src="../build/js/page-content/pickers/date-range-picker.js"></script>
   </body>
 </html>
