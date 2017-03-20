@@ -143,8 +143,8 @@
         </div>
         <ul class="list-unstyled navigation mb-0">
           <li class="sidebar-category">Main</li>
-          <li class="panel"><a href="index-vQisimah.html"><i class="ti-panel"></i><span class="sidebar-title">Dashboard</span></a></li>          
-          
+          <li class="panel"><a href="index-vQisimah.html"><i class="ti-panel"></i><span class="sidebar-title">Dashboard</span></a></li>
+
           <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse1" aria-expanded="false" aria-controls="collapse1" class="bubble collapsed"><i class="ti-home"></i><span class="sidebar-title">Upload</span></a>
             <ul id="collapse1" class="list-unstyled collapse">
               <li><a href="UploadQisimah.html">Upload Content</a></li>
@@ -152,18 +152,18 @@
             </ul>
           </li>
 
-          <li class="panel"><a href="BroadcastersQisimah.html"><i class="ti-panel"></i><span class="sidebar-title">Broadcasters</span></a></li> 
+          <li class="panel"><a href="BroadcastersQisimah.html"><i class="ti-panel"></i><span class="sidebar-title">Broadcasters</span></a></li>
 
-          <li class="panel"><a href="ContentQisimah.html"><i class="ti-panel"></i><span class="sidebar-title">Content</span></a></li> 
-          
+          <li class="panel"><a href="ContentQisimah.html"><i class="ti-panel"></i><span class="sidebar-title">Content</span></a></li>
+
           <li class="panel"><a role="button" data-toggle="collapse" data-parent=".navigation" href="#collapse3" aria-expanded="false" aria-controls="collapse3" class="active collapsed"><i class="ti-shopping-cart"></i><span class="sidebar-title">Reports</span></a>
             <ul id="collapse3" class="list-unstyled collapse">
               <li><a href="ReportsQisimah.html">General Reports</a></li>
               <li><a href="Reports-broadcaster-Qisimah.html">Broadcaster Reports</a></li>
-              <li><a href="Reports-content-Qisimah.html" class="active">Content Reports</a></li>            
+              <li><a href="Reports-content-Qisimah.html" class="active">Content Reports</a></li>
             </ul>
-          </li>   
-        </ul>        
+          </li>
+        </ul>
       </aside>
       <!-- Main Sidebar end-->
       <div class="page-container">
@@ -177,20 +177,36 @@
         </div>
 
         <div class="page-content container-fluid">
+          <form>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="txtProductName">Broadcaster</label>
+                  <input id="txtProductName" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="txtPrice">Content Title</label>
+                  <input id="txtPrice" type="text" class="form-control">
+                </div>
+              </div>
 
-          <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-              <!-- <label>Date range</label> -->
-              <div class="btn-toolbar">
-                <button id="predefined-ranges-picker" type="button" class="btn btn-raised btn-black"><i class="ti-calendar"> </i><span></span></button>
+            <div class="col-md-4">
+                <div class="form-group">
+                  <label>Select Date</label>
+                  <div class="btn-toolbar">
+                    <button id="predefined-ranges-picker" type="button" class="btn btn-raised btn-black"><i class="ti-calendar"> </i><span></span></button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            <button type="submit" class="mb-15 btn btn-raised btn-success">Filter</button>
+          </form>
 
           <div class="widget">
             <div class="widget-body">
+
 
               <table id="product-list" style="width: 100%" class="table table-hover dt-responsive nowrap">
                 <thead>
@@ -201,13 +217,13 @@
                         <label for="checkAll" class="pl-0">&nbsp;</label>
                       </div>
                     </th>
-                    
+
                     <th>Broadcaster</th>
                     <th class="text-right">Location</th>
-                    <th class="text-right">Time of Play</th>                    
+                    <th class="text-right">Time of Play</th>
                     <th class="text-right">Date of Play</th>
-                    
-                    
+
+
                   </tr>
                 </thead>
                 <tbody>
@@ -217,14 +233,14 @@
                         <input id="product-01" type="checkbox" value="01">
                         <label for="product-01" class="pl-0">&nbsp;</label>
                       </div>
-                    </td>                    
+                    </td>
                     <td>Confession</td>
                     <td class="text-right">Kofi Kinaata</td>
                     <td class="text-right">Y FM</td>
-                    
+
                     <td class="text-right">19 May 2016</td>
-                    
-                    
+
+
                   </tr>
                   <tr>
                     <td class="text-center">
@@ -233,19 +249,19 @@
                         <label for="product-02" class="pl-0">&nbsp;</label>
                       </div>
                     </td>
-                    
+
                     <td>Susuka</td>
                     <td class="text-right">Kofi Kinaata</td>
                     <td class="text-right">Live FM</td>
-                    
-                    <td class="text-right">20 june 2016</td>                   
-                    
+
+                    <td class="text-right">20 june 2016</td>
+
                   </tr>
                 </tbody>
               </table>
             </div>
-          </div>          
-        </div>       
+          </div>
+        </div>
         <div class="footer">2016 &copy;  <a href="http://themeforest.net/item/umega-responsive-web-app-kit/15482080">Umega - Responsive Web App Kit</a> by <a href="http://themeforest.net/user/lethemes" target="_blank">Lethemes.</a></div>
       </div>
       <!-- Right Sidebar start-->
