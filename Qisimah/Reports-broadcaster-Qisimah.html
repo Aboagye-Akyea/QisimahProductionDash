@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Qisimah Audio Insights - Broadcaster Report</title>
+    <title>Qisimah Audio Insights - Reports</title>
     <!-- PACE-->
     <link rel="stylesheet" type="text/css" href="../plugins/PACE/themes/blue/pace-theme-flash.css">
     <script type="text/javascript" src="../plugins/PACE/pace.min.js"></script>
@@ -20,11 +20,6 @@
     <link rel="stylesheet" type="text/css" href="../plugins/flag-icon-css/css/flag-icon.min.css">
     <!-- Bootstrap Progressbar-->
     <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
-    <!-- DataTables-->
-    <link rel="stylesheet" type="text/css" href="../plugins/datatables.net-bs/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../plugins/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../plugins/datatables.net-colreorder-bs/css/colReorder.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../plugins/datatables.net-responsive-bs/css/responsive.bootstrap.min.css">
     <!-- Primary Style-->
     <link rel="stylesheet" type="text/css" href="../build/css/fourth-layout.css">
     <!-- Bootstrap Date Range Picker-->
@@ -46,7 +41,7 @@
               <button type="button" class="btn btn-default search-bar-toggle"><i class="ti-close"></i></button></span>
           </div>
         </form>
-      </div><a href="index-vQisimah.html" class="brand pull-left"><img src="../build/images/logo/logo-light.png" alt="" width="100" class="logo"><img src="../build/images/logo/logo-sm-light.png" alt="" width="28" class="logo-sm"></a><a href="javascript:;" role="button" class="hamburger-menu pull-left"><span></span></a>
+      </div><a href="index.html" class="brand pull-left"><img src="../build/images/logo/logo-light.png" alt="" width="100" class="logo"><img src="../build/images/logo/logo-sm-light.png" alt="" width="28" class="logo-sm"></a><a href="javascript:;" role="button" class="hamburger-menu pull-left"><span></span></a>
       <form class="mt-15 mb-15 pull-left hidden-xs">
         <div class="form-group has-feedback mb-0">
           <input type="text" aria-describedby="inputSearchFor" placeholder="Search for..." style="width: 200px" class="form-control rounded"><span aria-hidden="true" class="ti-search form-control-feedback"></span><span id="inputSearchFor" class="sr-only">(default)</span>
@@ -118,9 +113,9 @@
         </li>
         <li class="dropdown hidden-xs"><a id="dropdownMenu2" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle header-icon lh-1 pt-15 pb-15">
             <div class="media mt-0">
-              <div class="media-left avatar"><img src="../build/images/users/04.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
+              <div class="media-left avatar"><img src="../build/images/users/Kofi-Kinaata-1.jpg" alt="" class="media-object img-circle"><span class="status bg-success"></span></div>
               <div class="media-right media-middle pl-0">
-                <p class="fs-12 text-base mb-0">Hi, Matthew</p>
+                <p class="fs-12 text-base mb-0">Hi, Kofi</p>
               </div>
             </div></a>
           <ul aria-labelledby="dropdownMenu2" class="dropdown-menu fs-12 animated fadeInDown">
@@ -134,7 +129,6 @@
     </header>
     <!-- Header end-->
     <div class="main-container">
-      <!-- Main Sidebar start-->
       <!-- Main Sidebar start-->
       <aside class="main-sidebar">
         <div class="user">
@@ -161,67 +155,157 @@
             <ul id="collapse3" class="list-unstyled collapse">
               <li><a href="ReportsQisimah.html">General Reports</a></li>
               <li><a href="Reports-broadcaster-Qisimah.html">Broadcaster Reports</a></li>
-              <li><a href="Reports-content-Qisimah.html" class="active">Content Reports</a></li>
+              <li><a href="report-content-Qisim.html" class="active">Content Reports</a></li>
             </ul>
           </li>
         </ul>
       </aside>
       <!-- Main Sidebar end-->
       <div class="page-container">
-        <div class="page-header container-fluid">
-          <div class="row">
-            <div class="col-sm-6">
-              <h4 class="mt-0 mb-5">Live FM Report</h4>
-            </div>
-
-            <div class="widget no-border col-sm-2 pull-right">
-              <div class="bg-black p-15 clearfix">
-                <p class="mb-0 pull-right fs-18">Total Plays</p>
-              </div>
-              <div class="clearfix p-10 bd-l bd-b bd-r">
-                <div class="pull-right">
-                  <div class="fs-22 fw-100 lh-1">400</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="page-content container-fluid">
-
-          <form>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="txtProductName">Broadcaster</label>
-                  <input id="txtProductName" type="text" class="form-control">
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="txtPrice">Content Title</label>
-                  <input id="txtPrice" type="text" class="form-control">
-                </div>
-              </div>
-
-            <div class="col-md-4">
-                <div class="form-group">
-                  <label>Select Date</label>
-                  <div class="btn-toolbar">
-                    <button id="predefined-ranges-picker" type="button" class="btn btn-raised btn-black"><i class="ti-calendar"> </i><span></span></button>
+        <div class="page-content container-fluid p-0">
+          <div class="row row-0">
+            <div class="col-lg-12">
+              <div class="overlay-container text-white"><img src="../build/images/backgrounds/profile.png" alt="" class="overlay-bg img-responsive">
+                <div style="padding: 120px 30px 30px 30px" class="overlay-content clearfix">
+                  <div class="pull-left media">
+                    <div class="media-left"><a href="javascript:void(0)"><img src="../build/images/users/Kofi-Kinaata-1.jpg" width="100" alt="" class="img-thumbnail img-responsive"></a></div>
+                    <div style="width: auto" class="media-body media-middle">
+                      <h2 class="media-heading">Confessions</h2>
+                      <div class="fs-20">Kofi Kinaata</div>
+                    </div>
+                  </div>
+                  <div class="pull-right text-center">
+                    <!-- <ul class="list-inline">
+                      <li>
+                        <div class="fs-24 fw-500">208</div>
+                        <p>Followers</p>
+                      </li>
+                      <li>
+                        <div class="fs-24 fw-500">560</div>
+                        <p>Likes</p>
+                      </li>
+                      <li>
+                        <div class="fs-24 fw-500">95</div>
+                        <p>Photos</p>
+                      </li>
+                    </ul> -->
+                  <br>
+                  <br>
+                  <br>
+                    <button type="button" class="btn btn-raised btn-block btn-default">Edit</button>
                   </div>
                 </div>
               </div>
             </div>
-            <button type="submit" class="mb-15 btn btn-raised btn-success">Filter</button>
-          </form>
+          </div>
+          <div class="row ml-10 mr-10 pt-10">
+            <div class="col-md-3">
+              <div class="widget clear">
+                <div class="widget-heading">
+                  <h3 class="widget-title">Details</h3>
+                </div>
+                <div class="widget-body">
+                  <ul class="media-list mb-0">
+                    <li class="media">
+                      <div class="media-left"><i class="ti-briefcase text-info"></i></div>
+                      <div class="media-body">
+                        <p>Title</p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left"><i class="ti-gift text-info"></i></div>
+                      <div class="media-body">
+                        <p>Album</p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left"><i class="ti-email text-info"></i></div>
+                      <div class="media-body">
+                        <p>Feature</p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left"><i class="ti-home text-info"></i></div>
+                      <div class="media-body">
+                        <p>Date Uploaded: 30 January 2017</p>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <div class="media-left"><i class="ti-mobile text-info"></i></div>
+                      <div class="media-body">
+                        <p>(251) 300-2770</p>
+                      </div>
+                    </li>
+                    <!-- <li class="media">
+                      <div class="media-left"><i class="ti-world text-info"></i></div>
+                      <div class="media-body">
+                        <p>www.lethemes.net</p>
+                      </div>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="widget clear">
+                <div class="widget-heading">
+                  <h3 class="widget-title">Biography</h3>
+                </div>
+                <div class="widget-body">
+                  <p>I am an Java, Android and Python software developer and teacher with 5 years of development experience! Whats more I reveal all my knowledge and secrets in my courses!</p>
+                  <p>I've been using Java since all the way back in 2006 !</p>
+                </div>
+              </div> -->
+              <!-- <div class="widget clear">
+                <div class="widget-heading">
+                  <h3 class="widget-title">Skills</h3>
+                </div>
+                <div class="widget-body">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <div class="block clearfix mb-5"><span class="pull-left fs-12">HTML5</span><span class="pull-right label label-outline label-primary">95%</span></div>
+                      <div class="progress progress-xs">
+                        <div role="progressbar" data-transitiongoal="85" class="progress-bar"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="block clearfix mb-5"><span class="pull-left fs-12">CSS</span><span class="pull-right label label-outline label-success">98%</span></div>
+                      <div class="progress progress-xs">
+                        <div role="progressbar" data-transitiongoal="98" class="progress-bar progress-bar-success"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="block clearfix mb-5"><span class="pull-left fs-12">Javascript</span><span class="pull-right label label-outline label-purple">85%</span></div>
+                      <div class="progress progress-xs">
+                        <div role="progressbar" data-transitiongoal="85" class="progress-bar progress-bar-purple"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+              <!-- <label>Date range</label> -->
+              <div class="btn-toolbar">
+                <button id="predefined-ranges-picker" type="button" class="btn btn-raised btn-black"><i class="ti-calendar"> </i><span></span></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="widget no-border col-sm-4 pull-right">
+            <div class="bg-black p-15 clearfix">
+              <p class="mb-0 pull-right fs-18">Total Plays</p>
+            </div>
+            <div class="clearfix p-10 bd-l bd-b bd-r">
+              <div class="pull-right">
+                <div class="fs-22 fw-100 lh-1">400</div>
+              </div>
+            </div>
+          </div>
 
         </div>
-
-          <div class="widget">
-
-
+              <div class="widget">
             <div class="widget-body">
 
               <table id="product-list" style="width: 100%" class="table table-hover dt-responsive nowrap">
@@ -233,10 +317,9 @@
                         <label for="checkAll" class="pl-0">&nbsp;</label>
                       </div>
                     </th>
-                    <th>Content</th>
-                    <th class="text-center">Time of Play</th>
-                    <th class="text-center">Date of Play</th>
-
+                    <th class="text-right">Broadcasters</th>
+                    <th class="text-right">Time of Play</th>
+                    <th class="text-right">Date of Play</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -247,10 +330,31 @@
                         <label for="product-01" class="pl-0">&nbsp;</label>
                       </div>
                     </td>
-                    <td>Confession</td>
-                    <td class="text-center">16.00 GMT</td>
-                    <td class="text-center">19 May 2016</td>
-
+                    <td class="text-right">Kofi Kinaata</td>
+                    <td class="text-right">Y FM</td>
+                    <td class="text-right">19 May 2016</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      <div class="checkbox-custom">
+                        <input id="product-01" type="checkbox" value="01">
+                        <label for="product-01" class="pl-0">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td class="text-right">Kofi Kinaata</td>
+                    <td class="text-right">Y FM</td>
+                    <td class="text-right">19 May 2016</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center">
+                      <div class="checkbox-custom">
+                        <input id="product-01" type="checkbox" value="01">
+                        <label for="product-01" class="pl-0">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td class="text-right">Kofi Kinaata</td>
+                    <td class="text-right">Y FM</td>
+                    <td class="text-right">19 May 2016</td>
                   </tr>
                   <tr>
                     <td class="text-center">
@@ -259,18 +363,20 @@
                         <label for="product-02" class="pl-0">&nbsp;</label>
                       </div>
                     </td>
-
-                    <td>Susuka</td>
-                    <td class="text-center">02.34 GMT</td>
-                    <td class="text-center">20 June 2016</td>
-
+                    <td class="text-right">Kofi Kinaata</td>
+                    <td class="text-right">Live FM</td>
+                    <td class="text-right">20 june 2016</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+            </div>
+
+
+          </div>
         </div>
-        <div class="footer">2016 &copy;  <a href="http://qisimah.com">Qisimah Audio Insights</a></div>
+        <div class="footer">2017 &copy;  <a href="http://qisimah.com">Qisimah Audio Insights</a></div>
       </div>
       <!-- Right Sidebar start-->
       <aside class="right-sidebar closed">
@@ -563,6 +669,8 @@
     <script type="text/javascript" src="../plugins/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- jQuery Easy Pie Chart-->
     <script type="text/javascript" src="../plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <!-- Google maps-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=weather"></script>
     <!-- DataTables-->
     <script type="text/javascript" src="../plugins/datatables.net/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../plugins/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
@@ -580,9 +688,10 @@
     <script type="text/javascript" src="../build/js/fourth-layout/app.js"></script>
     <script type="text/javascript" src="../build/js/fourth-layout/demo.js"></script>
     <script type="text/javascript" src="../build/js/page-content/e-commerce/product-list.js"></script>
+    <script type="text/javascript" src="../build/js/page-content/user-pages/profile.js"></script>
     <!-- MomentJS-->
     <script type="text/javascript" src="../plugins/moment/min/moment.min.js"></script>
-<!-- Bootstrap Date Range Picker-->
+    <!-- Bootstrap Date Range Picker-->
     <script type="text/javascript" src="../plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
     <!-- Custom JS-->
     <script type="text/javascript" src="../build/js/page-content/pickers/date-range-picker.js"></script>
